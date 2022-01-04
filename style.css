@@ -1,0 +1,125 @@
+.container {
+  margin: 0px;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.container__header {
+  height: 10%;
+  width: 90%;
+  font-family: Inconsolata;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+.container__content {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container__content__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 40%;
+}
+.container__content__image img {
+  height: 70%;
+  width: 70%;
+  object-fit: contain;
+}
+.container__content__info {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.container__content__info__title {
+  margin: 0px;
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 95px;
+  letter-spacing: -0.035em;
+}
+.container__content__info__data {
+  margin: 0px;
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: normal;
+  width: 70%;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.035em;
+}
+.container__content__info__button {
+  margin: 0px;
+  width: 190px;
+  height: 48px;
+  color: white;
+  background: #333333;
+}
+.container__footer {
+  height: 3%;
+  width: 100%;
+}
+.container__footer p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #bdbdbd;
+}
+@media screen and (max-width: 376px) {
+  .container__header {
+    height: 0%;
+    font-size: 20px;
+  }
+  .container__content {
+    flex-direction: column;
+  }
+  .container__content__info__title {
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 71px;
+    letter-spacing: -0.035em;
+    color: #333333;
+  }
+  .container__content__info__data {
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -0.035em;
+    color: #4f4f4f;
+  }
+  .container__content__info {
+    height: 60%;
+    width: 80%;
+  }
+  .container__content__image {
+    height: 40%;
+    width: 100%;
+  }
+  .container__content__image img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+}
